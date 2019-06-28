@@ -77,3 +77,11 @@ set msg=Test
 set hasSpoiler=true
 %cmd%sendFile.bat
 )
+
+if %command%==webhook (
+set channel=%arg2%
+set webhook=[Your webhook ID]
+set webhooktoken=[Your Webhook Token]
+set msg=%arg4%
+%cmd%executeWebhook.bat
+)
