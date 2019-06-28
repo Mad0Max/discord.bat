@@ -104,37 +104,39 @@ set msg=Hello
 This will send an API request with the JSON body `{"content":"%msg%"}`
 
 
-| Variable Name | Set variable to          | Purpose                                                                                     |
-|---------------|--------------------------|---------------------------------------------------------------------------------------------|
-| %msg%         | String (message content) | Used by sendMessage and related commands to send a message.                                 |
-| %msgid%       | Message ID               |                                                                                             |
-| %user%        | User ID                  |                                                                                             |
-| %guild%       | Guild ID                 |                                                                                             |
-| %channel%     | Channel ID               |                                                                                             |
-| %role%        | Role ID                  |                                                                                             |
-| %dmd%         | int                      | Delete-message-days. Used for ban to delete N amount of days worth of messages by the user. |
-| %reason%      | String (action reason)   | Used by commands like ban. Adds a reason to the action.                                     |
-| %age%         | int                      |                                                                                             |
-| %uses%        | int                      |                                                                                             |
-| %temporary%   | boolean                  |                                                                                             |
-| %unique%      | boolean                  |                                                                                             |
-| %emoji%       | Emoji ID                 |                                                                                             |
-| %dmid%        | DM Channel ID            |                                                                                             |
-| %title%       | string                   | Embed title                                                                                 |
-| %description% | string                   | Embed description                                                                           |
-| %color%       | hex                      | Embed hex color                                                                             |
-| %footer%      | string                   | Embed footer                                                                                |
-| %url%         | string                   | Embed image url                                                                             |
-| %filename%    | string                   | Name of file to send                                                                        |
-| %filetype%    | string                   | Content type. text/plain is for plaintext files.                                            |
-| %file%        | string                   | The file content                                                                            |
-| %tts%         | boolean                  | If the message should be tts                                                                |
-| %hasSpoiler%  | boolean                  | If the file contains spoilers                                                               |
-| %rolename%    | string                   | Name of role                                                                                |
-| %perms%       | int                      | Permission integer                                                                          |
-| %rolecolor%   | hex                      | Role color hex value                                                                        |
-| %hoist%       | boolean                  | If role is displayed in separate group                                                         |
-| %mentionable% | boolean                  | If role is mentionable                                                                         |
+| Variable Name  | Set variable to          | Purpose                                                                                     |
+|----------------|--------------------------|---------------------------------------------------------------------------------------------|
+| %msg%          | String (message content) | Used by sendMessage and related commands to send a message.                                 |
+| %msgid%        | Message ID               |                                                                                             |
+| %user%         | User ID                  |                                                                                             |
+| %guild%        | Guild ID                 |                                                                                             |
+| %channel%      | Channel ID               |                                                                                             |
+| %role%         | Role ID                  |                                                                                             |
+| %dmd%          | int                      | Delete-message-days. Used for ban to delete N amount of days worth of messages by the user. |
+| %reason%       | String (action reason)   | Used by commands like ban. Adds a reason to the action.                                     |
+| %age%          | int                      | Max age for invites                                                                         |
+| %uses%         | int                      | Amount of invite uses                                                                       |
+| %temporary%    | boolean                  | If the the invite is temporary                                                              |
+| %unique%       | boolean                  | If the invite is unique                                                                     |
+| %emoji%        | Emoji ID                 |                                                                                             |
+| %dmid%         | DM Channel ID            |                                                                                             |
+| %title%        | string                   | Embed title                                                                                 |
+| %description%  | string                   | Embed description                                                                           |
+| %color%        | hex                      | Embed hex color                                                                             |
+| %footer%       | string                   | Embed footer                                                                                |
+| %url%          | string                   | Embed image url                                                                             |
+| %filename%     | string                   | Name of file to send                                                                        |
+| %filetype%     | string                   | Content type. text/plain is for plaintext files.                                            |
+| %file%         | string                   | The file content                                                                            |
+| %tts%          | boolean                  | If the message should be tts                                                                |
+| %hasSpoiler%   | boolean                  | If the file contains spoilers                                                               |
+| %rolename%     | string                   | Name of role                                                                                |
+| %perms%        | int                      | Permission integer                                                                          |
+| %rolecolor%    | hex                      | Role color hex value                                                                        |
+| %hoist%        | boolean                  | If role is displayed in separate group                                                      |
+| %mentionable%  | boolean                  | If role is mentionable                                                                      |
+| %webhook%      | Webhook ID               |                                                                                             |
+| %webhooktoken% | Webhook Token            | Token to send information to a webhook   
 
 The `%argN%` variables can be used to get more information about an executed command.
 
