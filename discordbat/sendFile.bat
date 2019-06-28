@@ -1,7 +1,6 @@
 @echo off   
 call ratelimitcheck.bat
 echo %msg%
-if "%isratelimited%"=="1" timeout 5 >nul
 (
 echo ------WebKitFormBoundary7MA4YWxkTrZu0gW
 echo Content-Disposition: form-data; name="file"; filename="%filename%"

@@ -1,6 +1,5 @@
 @echo off
 call ratelimitcheck.bat
-if "%isratelimited%"=="1" timeout 5 >nul
 set /a color=0x%color%
 echo|set /p ="{"content":"%msg%","embed":{"title":"%title%","description":"%description%","color":%color%,"footer":{"text":"%footer%"},"image":{"url":"%url%"}}}" > request.txt
 call batchhttp.bat "https://discordapp.com/api/v6/channels/%channel%/messages" -method POST -headers-file header.txt -saveTO response.txt -body-file request.txt
