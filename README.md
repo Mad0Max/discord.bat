@@ -1,6 +1,6 @@
 # Discord.bat
 Yes.. its real.
-Made for Discord's Hack Week by `Mad Max#8495`
+Made for Discord's Hack Week by `Mad Max#7709`
 The only true Discord API wrapper that matters
 ![Discord Hack Week](https://cdn-images-1.medium.com/max/2560/1*lh6NS8hx0pu5mlZeSqnu5w.jpeg)
 
@@ -9,7 +9,7 @@ The only true Discord API wrapper that matters
 **Please use this only in private testing servers to avoid security related issues**
 This is might not be fully secure. Windows batchfile is not a good language for anything, especially not something like this.
 **Using this might give users access to your system variables or bot information like the token or bot files.**
-If you do find large security issues please report it to me by sending me a private message (Mad Max#8495)
+If you do find large security issues please report it to me by sending me a private message (Mad Max#7709 ID: 202432015587344385)
 
 ---
 ### Features (Yes, there are features)
@@ -151,7 +151,7 @@ The `%argN%` variables can be used to get more information about an executed com
 ### Notes
 This is made as a joke and not for real world use.
 A demo-bot is also included with a few commands such as `userinfo`, `echo` and `xkcd`
-Remember to not mess with many variables such as `%USERNAME%`, `%TEMP%`, `%Path%` and many others. You can get a list of your system's variables when doing `set` in a command prompt - you should not use those.
+Remember to not mess with system variables such as `%USERNAME%`, `%TEMP%`, `%Path%` and many others. You can get a list of your system's variables when doing `set` in a command prompt - you should not use those.
 
 I could not test every file. So if you got weird errors from a file like `sendMessage.bat`  let me know.
 
